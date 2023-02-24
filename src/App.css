@@ -9,3 +9,37 @@
   display: block;
   width: 100%;
 }
+
+.news {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  width: 100%;
+  padding: 50px;
+}
+
+@media (max-width: 991px) {
+  .news{
+    grid-template-columns: 1fr;
+  }
+
+  .news-item img {
+    height: unset !important;
+  }
+}
+
+.news-item {
+  min-width: 100%;
+  border: 1px solid #eee;
+  cursor: pointer;
+}
+
+.news-item:hover {
+  background-color: #eee;
+}
+
+.news-item img {
+  width:100%;
+  height: 250px;
+}
+

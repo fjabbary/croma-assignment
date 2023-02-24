@@ -5,9 +5,11 @@ function Contact() {
 
     const [commentInfo, setCommentInfo] = useState({ name: '', email: '', comment: '' });
 
+
     const handleChange = (e) => {
         setCommentInfo({ ...commentInfo, [e.target.name]: e.target.value })
     }
+
 
     return (
         <div className="container w-50 text-left">
